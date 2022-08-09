@@ -16,9 +16,9 @@ WebDriver driver;
 		clickToElement(driver,SearchPageUI.SEARCH_BUTTON);
 	}
 
-	public boolean verifyMessageErrorDisplayed(String messageError) {
+	public String verifyMessageErrorDisplayed() {
 		waitToElementVisible(driver, SearchPageUI.MESSAGE_ERROR_SEARCH);
-		return messageError.equals(getElementText(driver,SearchPageUI.MESSAGE_ERROR_SEARCH));
+		return getElementText(driver,SearchPageUI.MESSAGE_ERROR_SEARCH);
 	}
 
 	public void inputToSearchKeywordTextbox(String searchKeywordTextbox) {

@@ -21,10 +21,9 @@ public class LoginPage extends AbtractPage {
 		return PageGeneratorManage.getHomePageOject(driver);
 	}
 
-	public boolean verifyEmailMessageError(String emailMessageError) {
+	public String verifyEmailMessageError() {
 		waitToElementVisible(driver, LoginPageUI.EMAIL_MESSAGE_ERROR);
-		String elementText = getElementText(driver, LoginPageUI.EMAIL_MESSAGE_ERROR);
-		return elementText.equals(emailMessageError);
+		return getElementText(driver, LoginPageUI.EMAIL_MESSAGE_ERROR);
 	}
 
 	public void inputToEmailTextbox(String emailError) {
@@ -34,8 +33,7 @@ public class LoginPage extends AbtractPage {
 
 	public boolean verifyEmailNotRegisterMessage(String emailNotRegisterMessage) {
 		waitToElementVisible(driver, LoginPageUI.EMAIL_NOT_REGISTER_MESSAGE_ERROR);
-		String element = getElementText(driver, LoginPageUI.EMAIL_NOT_REGISTER_MESSAGE_ERROR);
-		return element.contains(emailNotRegisterMessage);
+		return getElementText(driver, LoginPageUI.EMAIL_NOT_REGISTER_MESSAGE_ERROR).contains(emailNotRegisterMessage);
 	}
 
 	public void inputToPassword(String passwordError) {

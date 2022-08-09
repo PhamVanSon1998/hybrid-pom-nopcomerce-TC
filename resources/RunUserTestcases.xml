@@ -8,9 +8,12 @@
 	<test name="Run on CHROME UI">
 		<parameter name="browser" value="chrome_ui" />
 		<parameter name="url" value="https://demo.nopcommerce.com/" />
-		<parameter name="emailLogin" value="1343" />
+		<parameter name="emailLogin" value="13" />
 		<classes>
 			<class name="com.nopcomerce.users.Register" />
+			<class name="com.nopcomerce.users.MyAccount" />
+			<class name="com.nopcomerce.users.Login" />
+			<class name="com.nopcomerce.users.Search" />
 		</classes>
 	</test>
 

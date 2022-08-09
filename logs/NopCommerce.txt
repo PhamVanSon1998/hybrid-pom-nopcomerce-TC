@@ -1,72 +1,228 @@
-[INFO ] [2022-08-08 22:09:34,772] Register With Empty Data-Step 01: Init Home Page
-[INFO ] [2022-08-08 22:09:34,775] Register With Empty Data-Step 02: Verify Register Link Displayed
-[INFO ] [2022-08-08 22:09:34,893]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:34,896] Register With Empty Data-Step 03: Verify Login Link Displayed
-[INFO ] [2022-08-08 22:09:34,988]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:34,988] Register With Empty Data-Step 04: Click to Register Link  and Open Register Page
-[INFO ] [2022-08-08 22:09:35,774] Register With Empty Data-Step 05: Click to Register Button
-[INFO ] [2022-08-08 22:09:35,931] Register With Empty Data-Step 06: Verify FirstName error
-[INFO ] [2022-08-08 22:09:36,002]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,002] Register With Empty Data-Step 07: Verify LastName error
-[INFO ] [2022-08-08 22:09:36,057]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,058] Register With Empty Data-Step 08: Verify email error
-[INFO ] [2022-08-08 22:09:36,121]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,122] Register With Empty Data-Step 09: Verify password error
-[INFO ] [2022-08-08 22:09:36,180]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,180] Register With Empty Data-Step 10: Verify confirm password error
-[INFO ] [2022-08-08 22:09:36,235]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,239] Register With Invalid Email-Step 01: Verify Register link displayed
-[INFO ] [2022-08-08 22:09:36,292]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,292] Register With Invalid Email-Step 02: Verify Login link displayed
-[INFO ] [2022-08-08 22:09:36,340]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:36,340] Register With Invalid Email-Step 03: Click Gender male Checkbox
-[INFO ] [2022-08-08 22:09:36,445] Register With Invalid Email-Step 04: Input to FirstName Textbox
-[INFO ] [2022-08-08 22:09:36,600] Register With Invalid Email-Step 05: Input to LastName Textbox
-[INFO ] [2022-08-08 22:09:36,757] Register With Invalid Email-Step 06: Select date Dropdown
-[INFO ] [2022-08-08 22:09:36,888] Register With Invalid Email-Step 07: Select month Dropdown
-[INFO ] [2022-08-08 22:09:37,010] Register With Invalid Email-Step 08: Select year Dropdown
-[INFO ] [2022-08-08 22:09:37,127] Register With Invalid Email-Step 09: Input to Email error TextboxPhanthuy.123
-[INFO ] [2022-08-08 22:09:37,293] Register With Invalid Email-Step 10: Input to Company Name Textbox
-[INFO ] [2022-08-08 22:09:37,437] Register With Invalid Email-Step 11: Input to Password Textbox28111998
-[INFO ] [2022-08-08 22:09:37,604] Register With Invalid Email-Step 12: Input to Confirm Password
-[INFO ] [2022-08-08 22:09:37,771] Register With Invalid Email-Step 13: Click to Register Button
-[INFO ] [2022-08-08 22:09:37,861] Register With Invalid Email-Step 14: Verify Email error
-[INFO ] [2022-08-08 22:09:37,910]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:37,913] Register Succsess-Step 01: Click Gender male Checkbox
-[INFO ] [2022-08-08 22:09:37,994] Register Succsess-Step 02: Input to FirstName Textbox
-[INFO ] [2022-08-08 22:09:38,126] Register Succsess-Step 03: Input to LastName Textbox
-[INFO ] [2022-08-08 22:09:38,268] Register Succsess-Step 04: Select date Dropdown
-[INFO ] [2022-08-08 22:09:38,324] Register Succsess-Step 05: Select month Dropdown
-[INFO ] [2022-08-08 22:09:38,381] Register Succsess-Step 06: Select year Dropdown
-[INFO ] [2022-08-08 22:09:38,441] Register Succsess-Step 07: Input to Email error TextboxPhanthuy1343@gmail.com
-[INFO ] [2022-08-08 22:09:38,622] Register Succsess-Step 08: Input to Company Name Textbox
-[INFO ] [2022-08-08 22:09:38,742] Register Succsess-Step 09: Input to Password Textbox28111998
-[INFO ] [2022-08-08 22:09:38,880] Register Succsess-Step 10: Input to Confirm Password
-[INFO ] [2022-08-08 22:09:39,025] Register Succsess-Step 11: Click to Register Button
-[INFO ] [2022-08-08 22:09:40,182] Register Succsess-Step 12: Verify Register Success
-[INFO ] [2022-08-08 22:09:40,240]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:40,243] Register With Email existed-Step 01: Click Logout Link and navigate to Home Page
-[INFO ] [2022-08-08 22:09:41,822] Register With Email existed-Step 02: Open Register Page
-[INFO ] [2022-08-08 22:09:42,577] Register With Email existed-Step 03: Click Gender male Checkbox
-[INFO ] [2022-08-08 22:09:42,694] Register With Email existed-Step 04: Input to FirstName Textbox
-[INFO ] [2022-08-08 22:09:42,854] Register With Email existed-Step 05: Input to LastName Textbox
-[INFO ] [2022-08-08 22:09:42,995] Register With Email existed-Step 06: Select date Dropdown
-[INFO ] [2022-08-08 22:09:43,102] Register With Email existed-Step 07: Select month Dropdown
-[INFO ] [2022-08-08 22:09:43,207] Register With Email existed-Step 08: Select year Dropdown
-[INFO ] [2022-08-08 22:09:43,310] Register With Email existed-Step 09: Input to Email error TextboxPhanthuy1343@gmail.com
-[INFO ] [2022-08-08 22:09:43,470] Register With Email existed-Step 10: Input to Company Name Textbox
-[INFO ] [2022-08-08 22:09:43,609] Register With Email existed-Step 11: Input to Password Textbox28111998
-[INFO ] [2022-08-08 22:09:43,746] Register With Email existed-Step 12: Input to Confirm Password
-[INFO ] [2022-08-08 22:09:43,919] Register With Email existed-Step 13: Click to Register Button
-[INFO ] [2022-08-08 22:09:44,489] Register With Email existed-Step 14: Verify Email Exist
-[INFO ] [2022-08-08 22:09:44,555]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:44,559] Register With Password less 06 Character-Step 01: Input to Password textbox2811
-[INFO ] [2022-08-08 22:09:44,702] Register With Password less 06 Character-Step 02: Input to Confirm Password Textbox2811
-[INFO ] [2022-08-08 22:09:44,845] Register With Password less 06 Character-Step 03: Click to Register Button
-[INFO ] [2022-08-08 22:09:44,952] Register With Password less 06 Character-Step 04: Verify Password less 06 Character
-[INFO ] [2022-08-08 22:09:45,003]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-08-08 22:09:45,005] Register With Password and Confirm Password nt match-Step 01: Input to Password textbox28111998
-[INFO ] [2022-08-08 22:09:45,167] Register With Password and Confirm Password nt match-Step 02: Input to Confirm Password Textbox281198
-[INFO ] [2022-08-08 22:09:45,294] Register With Password and Confirm Password nt match-Step 03: Click to Register Button
-[INFO ] [2022-08-08 22:09:45,375] Register With Password and Confirm Password nt match-Step 04: Verify Password and Confirmation Password do not match
-[INFO ] [2022-08-08 22:09:45,422]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:27,278] Register With Empty Data-Step 01: Init Home Page
+[INFO ] [2022-08-09 10:31:27,284] Register With Empty Data-Step 02: Verify Register Link Displayed
+[INFO ] [2022-08-09 10:31:27,392]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:27,393] Register With Empty Data-Step 03: Verify Login Link Displayed
+[INFO ] [2022-08-09 10:31:27,465]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:27,465] Register With Empty Data-Step 04: Click to Register Link  and Open Register Page
+[INFO ] [2022-08-09 10:31:28,085] Register With Empty Data-Step 05: Click to Register Button
+[INFO ] [2022-08-09 10:31:28,244] Register With Empty Data-Step 06: Verify FirstName error
+[INFO ] [2022-08-09 10:31:28,304]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,304] Register With Empty Data-Step 07: Verify LastName error
+[INFO ] [2022-08-09 10:31:28,362]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,362] Register With Empty Data-Step 08: Verify email error
+[INFO ] [2022-08-09 10:31:28,430]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,430] Register With Empty Data-Step 09: Verify password error
+[INFO ] [2022-08-09 10:31:28,486]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,487] Register With Empty Data-Step 10: Verify confirm password error
+[INFO ] [2022-08-09 10:31:28,543]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,547] Register With Invalid Email-Step 01: Verify Register link displayed
+[INFO ] [2022-08-09 10:31:28,597]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,597] Register With Invalid Email-Step 02: Verify Login link displayed
+[INFO ] [2022-08-09 10:31:28,647]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:28,648] Register With Invalid Email-Step 03: Click Gender male Checkbox
+[INFO ] [2022-08-09 10:31:28,751] Register With Invalid Email-Step 04: Input to FirstName Textbox
+[INFO ] [2022-08-09 10:31:28,909] Register With Invalid Email-Step 05: Input to LastName Textbox
+[INFO ] [2022-08-09 10:31:29,096] Register With Invalid Email-Step 06: Select date Dropdown
+[INFO ] [2022-08-09 10:31:29,245] Register With Invalid Email-Step 07: Select month Dropdown
+[INFO ] [2022-08-09 10:31:29,383] Register With Invalid Email-Step 08: Select year Dropdown
+[INFO ] [2022-08-09 10:31:29,505] Register With Invalid Email-Step 09: Input to Email error TextboxPhanthuy.123
+[INFO ] [2022-08-09 10:31:29,663] Register With Invalid Email-Step 10: Input to Company Name Textbox
+[INFO ] [2022-08-09 10:31:29,804] Register With Invalid Email-Step 11: Input to Password Textbox28111998
+[INFO ] [2022-08-09 10:31:29,979] Register With Invalid Email-Step 12: Input to Confirm Password
+[INFO ] [2022-08-09 10:31:30,146] Register With Invalid Email-Step 13: Click to Register Button
+[INFO ] [2022-08-09 10:31:30,235] Register With Invalid Email-Step 14: Verify Email error
+[INFO ] [2022-08-09 10:31:30,284]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:30,287] Register Succsess-Step 01: Click Gender male Checkbox
+[INFO ] [2022-08-09 10:31:30,367] Register Succsess-Step 02: Input to FirstName Textbox
+[INFO ] [2022-08-09 10:31:30,493] Register Succsess-Step 03: Input to LastName Textbox
+[INFO ] [2022-08-09 10:31:30,628] Register Succsess-Step 04: Select date Dropdown
+[INFO ] [2022-08-09 10:31:30,685] Register Succsess-Step 05: Select month Dropdown
+[INFO ] [2022-08-09 10:31:30,745] Register Succsess-Step 06: Select year Dropdown
+[INFO ] [2022-08-09 10:31:30,805] Register Succsess-Step 07: Input to Email error TextboxPhanthuy13@gmail.com
+[INFO ] [2022-08-09 10:31:30,974] Register Succsess-Step 08: Input to Company Name Textbox
+[INFO ] [2022-08-09 10:31:31,089] Register Succsess-Step 09: Input to Password Textbox28111998
+[INFO ] [2022-08-09 10:31:31,232] Register Succsess-Step 10: Input to Confirm Password
+[INFO ] [2022-08-09 10:31:31,376] Register Succsess-Step 11: Click to Register Button
+[INFO ] [2022-08-09 10:31:32,290] Register Succsess-Step 12: Verify Register Success
+[INFO ] [2022-08-09 10:31:32,347]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:32,350] Register With Email existed-Step 01: Click Logout Link and navigate to Home Page
+[INFO ] [2022-08-09 10:31:33,191] Register With Email existed-Step 02: Open Register Page
+[INFO ] [2022-08-09 10:31:33,759] Register With Email existed-Step 03: Click Gender male Checkbox
+[INFO ] [2022-08-09 10:31:33,853] Register With Email existed-Step 04: Input to FirstName Textbox
+[INFO ] [2022-08-09 10:31:33,998] Register With Email existed-Step 05: Input to LastName Textbox
+[INFO ] [2022-08-09 10:31:34,140] Register With Email existed-Step 06: Select date Dropdown
+[INFO ] [2022-08-09 10:31:34,243] Register With Email existed-Step 07: Select month Dropdown
+[INFO ] [2022-08-09 10:31:34,357] Register With Email existed-Step 08: Select year Dropdown
+[INFO ] [2022-08-09 10:31:34,463] Register With Email existed-Step 09: Input to Email error TextboxPhanthuy13@gmail.com
+[INFO ] [2022-08-09 10:31:34,621] Register With Email existed-Step 10: Input to Company Name Textbox
+[INFO ] [2022-08-09 10:31:34,767] Register With Email existed-Step 11: Input to Password Textbox28111998
+[INFO ] [2022-08-09 10:31:34,927] Register With Email existed-Step 12: Input to Confirm Password
+[INFO ] [2022-08-09 10:31:35,101] Register With Email existed-Step 13: Click to Register Button
+[INFO ] [2022-08-09 10:31:35,657] Register With Email existed-Step 14: Verify Email Exist
+[INFO ] [2022-08-09 10:31:35,727]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:35,730] Register With Password less 06 Character-Step 01: Input to Password textbox2811
+[INFO ] [2022-08-09 10:31:35,865] Register With Password less 06 Character-Step 02: Input to Confirm Password Textbox2811
+[INFO ] [2022-08-09 10:31:36,034] Register With Password less 06 Character-Step 03: Click to Register Button
+[INFO ] [2022-08-09 10:31:36,140] Register With Password less 06 Character-Step 04: Verify Password less 06 Character
+[INFO ] [2022-08-09 10:31:36,188]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:36,191] Register With Password and Confirm Password nt match-Step 01: Input to Password textbox28111998
+[INFO ] [2022-08-09 10:31:36,346] Register With Password and Confirm Password nt match-Step 02: Input to Confirm Password Textbox281198
+[INFO ] [2022-08-09 10:31:36,471] Register With Password and Confirm Password nt match-Step 03: Click to Register Button
+[INFO ] [2022-08-09 10:31:36,552] Register With Password and Confirm Password nt match-Step 04: Verify Password and Confirmation Password do not match
+[INFO ] [2022-08-09 10:31:36,597]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:40,049] Login Success-Step 01: Init Home Page
+[INFO ] [2022-08-09 10:31:40,049] Login Success-Step 02: Click Login link and navigate to Login Page 
+[INFO ] [2022-08-09 10:31:40,660] Login Success-Step 03: Input to Email TextboxPhanthuy13@gmail.com
+[INFO ] [2022-08-09 10:31:40,825] Login Success-Step 04: Input to Password Textbox28111998
+[INFO ] [2022-08-09 10:31:40,969] Login Success-Step 05: Click Login Button
+[INFO ] [2022-08-09 10:31:41,852] Login Success-Step 06: Verify MyAcount link Displayed
+[INFO ] [2022-08-09 10:31:41,910]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:41,912] Verify Customer Infor-Step 01: Init Home Page
+[INFO ] [2022-08-09 10:31:41,912] Verify Customer Infor-Step 02: Click Myacount link and navigate to CustomerInfor Page
+[INFO ] [2022-08-09 10:31:42,560] Verify Customer Infor-Step 03: Verify Gender male checkbox
+[INFO ] [2022-08-09 10:31:42,611]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:42,612] Verify Customer Infor-Step 04: Verify FirstName Textbox
+[INFO ] [2022-08-09 10:31:42,662]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:42,663] Verify Customer Infor-Step 05: Verify LastName Textbox
+[INFO ] [2022-08-09 10:31:42,717]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:42,717] Verify Customer Infor-Step 06: Verify date Dropdow
+[INFO ] [2022-08-09 10:31:43,084]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:43,084] Verify Customer Infor-Step 07: Verify month Dropdown
+[INFO ] [2022-08-09 10:31:43,290]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:43,291] Verify Customer Infor-Step 08: Verify year Dropdown
+[INFO ] [2022-08-09 10:31:44,216]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:44,216] Verify Customer Infor-Step 09: Verify Email Textbox
+[INFO ] [2022-08-09 10:31:44,256]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:44,256] Verify Customer Infor-Step 10: Verify Company Name Textbox
+[INFO ] [2022-08-09 10:31:44,306]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:44,309] Add Address-Step 01: Init CustomerInfor Page
+[INFO ] [2022-08-09 10:31:44,309] Add Address-Step 02: Click to Address link and navigate to Address Page
+[INFO ] [2022-08-09 10:31:44,913] Add Address-Step 03: Click to AddNew Button
+[INFO ] [2022-08-09 10:31:45,559] Add Address-Step 04: Input to AddressFirstName Textbox
+[INFO ] [2022-08-09 10:31:45,713] Add Address-Step 05: Input to AddressLastName Textbox
+[INFO ] [2022-08-09 10:31:45,861] Add Address-Step 06: Input to AddressEmail Textbox
+[INFO ] [2022-08-09 10:31:46,024] Add Address-Step 07: Input to Address Company Textbox
+[INFO ] [2022-08-09 10:31:46,164] Add Address-Step 08: Input to Address Country Dropdown
+[INFO ] [2022-08-09 10:31:46,287] Add Address-Step 09: Input Address State Dropdown
+[INFO ] [2022-08-09 10:31:46,589] Add Address-Step 10: Input to Address City Textbox
+[INFO ] [2022-08-09 10:31:46,738] Add Address-Step 11: Input to Address1 Textbox
+[INFO ] [2022-08-09 10:31:46,935] Add Address-Step 12: Input to Address2 Textbox
+[INFO ] [2022-08-09 10:31:47,126] Add Address-Step 13: Input to Zipcode Textbox
+[INFO ] [2022-08-09 10:31:47,270] Add Address-Step 14: Input to Phone Number Textbox
+[INFO ] [2022-08-09 10:31:47,419] Add Address-Step 15: Input to FaxNumber Textbox
+[INFO ] [2022-08-09 10:31:47,575] Add Address-Step 16: Click Save Button
+[INFO ] [2022-08-09 10:31:48,475] Add Address-Step 17: Verify Infor Table Displayed
+[INFO ] [2022-08-09 10:31:48,530]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:48,532] Change Password-Step 01: Init Home Page
+[INFO ] [2022-08-09 10:31:48,532] Change Password-Step 02: Click to Change Password link and navigate to Change Password Page
+[INFO ] [2022-08-09 10:31:49,123] Change Password-Step 03: Input to OldPassword28111998
+[INFO ] [2022-08-09 10:31:49,264] Change Password-Step 04: Input to New Password duplicate Old Password28111998
+[INFO ] [2022-08-09 10:31:49,417] Change Password-Step 05: Input to Confirm Password
+[INFO ] [2022-08-09 10:31:49,557] Change Password-Step 06: Click to Change Password Button
+[INFO ] [2022-08-09 10:31:50,082] Change Password-Step 07: Verify Change Password Mesage error
+[INFO ] [2022-08-09 10:31:50,141]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:50,141] Change Password-Step 08: Input to OldPassword28111998
+[INFO ] [2022-08-09 10:31:50,316] Change Password-Step 09: Input to New Password281198
+[INFO ] [2022-08-09 10:31:50,448] Change Password-Step 10: Input to Confirm Password
+[INFO ] [2022-08-09 10:31:50,574] Change Password-Step 11: Click to Change Password Button
+[INFO ] [2022-08-09 10:31:51,047] Change Password-Step 12: Verify Change Password Success
+[INFO ] [2022-08-09 10:31:51,119]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:51,123] MyProduct review-Step 01: Init Change Password Page
+[INFO ] [2022-08-09 10:31:51,123] MyProduct review-Step 02: Click to MyProduct Review link and navigate to MyProduct Review Page
+[INFO ] [2022-08-09 10:31:51,746] MyProduct review-Step 03: Move to Computer link
+[INFO ] [2022-08-09 10:31:51,926] MyProduct review-Step 04: Click Destop link
+[INFO ] [2022-08-09 10:31:52,672] MyProduct review-Step 05: Click to Product Review
+[INFO ] [2022-08-09 10:31:54,380] MyProduct review-Step 06: Click to Add YourReview link
+[INFO ] [2022-08-09 10:31:55,076] MyProduct review-Step 07: Input to Review Title Textbox
+[INFO ] [2022-08-09 10:31:55,271] MyProduct review-Step 08: Input to Reviewtext TextArea
+[INFO ] [2022-08-09 10:31:55,411] MyProduct review-Step 09: Select Rating Checkbox
+[INFO ] [2022-08-09 10:31:55,538] MyProduct review-Step 10: Click Submit Review
+[INFO ] [2022-08-09 10:31:56,104] MyProduct review-Step 11: Click to MyAcount link in footer
+[INFO ] [2022-08-09 10:31:56,671] MyProduct review-Step 12: Click to My ProductReview link
+[INFO ] [2022-08-09 10:31:57,324] MyProduct review-Step 13: Verify Product reviewTitle Displayed
+[INFO ] [2022-08-09 10:31:57,413]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:57,414] MyProduct review-Step 14: Verify Product reviewText Displayed
+[INFO ] [2022-08-09 10:31:57,476]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:31:57,476] MyProduct review-Step 15: Verify Product Review Displayed
+[INFO ] [2022-08-09 10:31:57,539]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:01,738] Login With Empty Data 01: Init Home Page
+[INFO ] [2022-08-09 10:32:01,738] Login With Empty Data 02: Click to Login link and navigate to Login Page
+[INFO ] [2022-08-09 10:32:02,706] Login With Empty Data 03: Click to Login Button
+[INFO ] [2022-08-09 10:32:02,841] Login With Empty Data 04: Verify Email Message error
+[INFO ] [2022-08-09 10:32:02,895]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:02,897] Login With Invalid Email 01: Input to Email error TextboxPhanthuy.123
+[INFO ] [2022-08-09 10:32:03,062] Login With Invalid Email 02: Click to Login Button
+[INFO ] [2022-08-09 10:32:03,137] Login With Invalid Email 03: Verify Email Massage error
+[INFO ] [2022-08-09 10:32:03,182]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:03,185] Login With Email not Register 01: Input to Email Textbox not RegisterPhanthuy111@gmail.com
+[INFO ] [2022-08-09 10:32:03,342] Login With Email not Register 02: Click to Login Button
+[INFO ] [2022-08-09 10:32:03,846] Login With Email not Register 03: Verify Email not Register Message
+[INFO ] [2022-08-09 10:32:03,902]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:03,904] Login With Password empty 01: Input to Email Textbox Phanthuy13@gmail.com
+[INFO ] [2022-08-09 10:32:04,069] Login With Password empty 02: Click to Login Button
+[INFO ] [2022-08-09 10:32:04,588] Login With Password empty 03: Verify Email not Register Message
+[INFO ] [2022-08-09 10:32:04,650]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:04,652] Login With Password error 01: Input to Email Textbox Phanthuy13@gmail.com
+[INFO ] [2022-08-09 10:32:04,823] Login With Password empty 02: Input to Password error123457
+[INFO ] [2022-08-09 10:32:04,963] Login With Password empty 03: Click to Login Button
+[INFO ] [2022-08-09 10:32:05,445] Login With Password empty 04: Verify Email not Reister MassagePhanthuy13@gmail.com
+[INFO ] [2022-08-09 10:32:05,490]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:05,492] Login Success 01: Input to Email Textbox Phanthuy13@gmail.com
+[INFO ] [2022-08-09 10:32:05,656] Login Success 02: Input to newPassword Textbox 281198
+[INFO ] [2022-08-09 10:32:05,793] Login Success 03: Click to Login Button and navigate to Home Page
+[INFO ] [2022-08-09 10:32:06,672] Login Success 04: Verify My Acount link Displayed
+[INFO ] [2022-08-09 10:32:06,732]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:09,720] Login Success Step-01: Init Home Page
+[INFO ] [2022-08-09 10:32:09,720] Login Success Step- 02: Click to Login link and navigate to Login Page
+[INFO ] [2022-08-09 10:32:10,369] Login Success Step-03: Input to Email Textbox Phanthuy13@gmail.com
+[INFO ] [2022-08-09 10:32:10,524] Login Success Step-04: Input to newPassword Textbox 281198
+[INFO ] [2022-08-09 10:32:10,662] Login Success Step-05: Click to Login Button and navigate to Home Page
+[INFO ] [2022-08-09 10:32:11,472] Login Success Step-06: Verify My Acount link Displayed
+[INFO ] [2022-08-09 10:32:11,527]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:11,528] Search with Empty Data Step-01: Init Home Page
+[INFO ] [2022-08-09 10:32:11,529] Search with Empty Data Step-02: Click Search link and navigate to Search Page
+[INFO ] [2022-08-09 10:32:12,139] Search with Empty Data Step-03: Click to Search Button
+[INFO ] [2022-08-09 10:32:12,690] Search with Empty Data Step-04: Verify Message error Displayed
+[INFO ] [2022-08-09 10:32:12,756]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:12,757] Search with Data not Exist Step-01: Input to Search Keyword Textbox
+[INFO ] [2022-08-09 10:32:12,904] Search with Data not Exist Step-02: Click to Search Button
+[INFO ] [2022-08-09 10:32:13,513] Search with Data not Exist Step-03: Verify Message error Displayed
+[INFO ] [2022-08-09 10:32:13,567]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:13,569] Search with Data Relative Step-01: Input to Search Keyword Textbox
+[INFO ] [2022-08-09 10:32:13,698] Search with Data Relative Step-02: Click to Search Button
+[INFO ] [2022-08-09 10:32:15,364] Search with Data Relative Step-03: Verify Product Item Displayed
+[INFO ] [2022-08-09 10:32:15,422]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:15,424] Search with Data Absolute Step-01: Input to Search Keyword Textbox
+[INFO ] [2022-08-09 10:32:15,592] Search with Data Absolute Step-02: Click to Search Button
+[INFO ] [2022-08-09 10:32:16,709] Search with Data Absolute Step-03: Verify Product Item Displayed
+[INFO ] [2022-08-09 10:32:16,739] Search with Data Absolute Step-04: Verify Product Name Displayed
+[INFO ] [2022-08-09 10:32:16,797]  Advanced Search with Parent Categories Step-01: Check to Advanced Search
+[INFO ] [2022-08-09 10:32:16,909]  Advanced Search with Parent Categories Step-02: Input to Search keyword Textbox
+[INFO ] [2022-08-09 10:32:17,058]  Advanced Search with Parent Categories Step-03: Select Category Dropdown
+[INFO ] [2022-08-09 10:32:17,159]  Advanced Search with Parent Categories Step-04: Uncheck sub Category checkbox
+[INFO ] [2022-08-09 10:32:17,205]  Advanced Search with Parent Categories Step-05: Click to Search Button
+[INFO ] [2022-08-09 10:32:18,200]  Advanced Search with Parent Categories Step-06: Verify Message error Displayed
+[INFO ] [2022-08-09 10:32:18,258]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:18,259]  Advanced Search with Sub Categories Step-01: Check to Advanced Search
+[INFO ] [2022-08-09 10:32:18,299]  Advanced Search with Sub Categories Step-02: Input to Search Keyword Textbox
+[INFO ] [2022-08-09 10:32:18,451]  Advanced Search with Sub Categories Step-03: Select Category Dropdown
+[INFO ] [2022-08-09 10:32:18,514]  Advanced Search with Sub Categories Step-04: Check sub Category checkbox
+[INFO ] [2022-08-09 10:32:18,611]  Advanced Search with Sub Categories Step-05: Click to Search Button
+[INFO ] [2022-08-09 10:32:19,326]  Advanced Search with Sub Categories Step-06: Verify Product Item Displayed
+[INFO ] [2022-08-09 10:32:19,357]  Advanced Search with Sub Categories Step-07: Verify Product Name Displayed
+[INFO ] [2022-08-09 10:32:19,413]  Advanced Search with Incorect Manufacturer Step-01: Check to Advanced Search
+[INFO ] [2022-08-09 10:32:19,459]  Advanced Search with Incorect Manufacturer Step-02: Input to Search Keyword Textbox
+[INFO ] [2022-08-09 10:32:19,633]  Advanced Search with Incorect Manufacturer Step-03: Select Category Dropdown
+[INFO ] [2022-08-09 10:32:19,693]  Advanced Search with Incorect Manufacturer Step-04: Check sub Category checkbox
+[INFO ] [2022-08-09 10:32:19,729]  Advanced Search with Incorect Manufacturer Step-04: Select Category Dropdown
+[INFO ] [2022-08-09 10:32:19,839]  Advanced Search with Incorect Manufacturer Step-05: Click to Search Button
+[INFO ] [2022-08-09 10:32:21,223]  Advanced Search with Incorect Manufacturer Step-06: Verify Message error Displayed
+[INFO ] [2022-08-09 10:32:21,272]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-08-09 10:32:21,273]  Advanced Search with Correct Manufacturer Step-01: Check to Advanced Search
+[INFO ] [2022-08-09 10:32:21,312]  Advanced Search with Correct Manufacturer Step-02: Input to Search Keyword Textbox
+[INFO ] [2022-08-09 10:32:21,464]  Advanced Search with Correct Manufacturer Step-03: Select Category Dropdown
+[INFO ] [2022-08-09 10:32:21,544]  Advanced Search with Correct Manufacturer Step-04: Check sub Category checkbox
+[INFO ] [2022-08-09 10:32:21,585]  Advanced Search with Correct Manufacturer Step-05: Select Category Dropdown
+[INFO ] [2022-08-09 10:32:21,683]  Advanced Search with Correct Manufacturer Step-06: Check to Search Button
+[INFO ] [2022-08-09 10:32:22,376]  Advanced Search with Correct Manufacturer Step-07: Verify Product Item Displayed
+[INFO ] [2022-08-09 10:32:22,411]  Advanced Search with Correct Manufacturer Step-08: Verify Product Name Displayed
