@@ -8,12 +8,13 @@
 	<test name="Run on CHROME UI">
 		<parameter name="browser" value="chrome_ui" />
 		<parameter name="url" value="https://demo.nopcommerce.com/" />
-		<parameter name="emailLogin" value="13" />
+		<parameter name="emailLogin" value="2312" />
 		<classes>
 			<class name="com.nopcomerce.users.Register" />
 			<class name="com.nopcomerce.users.MyAccount" />
 			<class name="com.nopcomerce.users.Login" />
 			<class name="com.nopcomerce.users.Search" />
+			<class name="com.nopcomerce.users.WishlistCompareRecentView" />
 		</classes>
 	</test>
 

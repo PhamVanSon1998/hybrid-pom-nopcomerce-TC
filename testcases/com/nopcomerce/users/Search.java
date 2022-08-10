@@ -8,12 +8,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.AbtractTest;
-import pageObjects.AddressPage;
-import pageObjects.ChangePasswordPage;
 import pageObjects.CustomerInforPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import pageObjects.MyProductReviewPage;
 import pageObjects.SearchPage;
 
 public class Search extends AbtractTest {

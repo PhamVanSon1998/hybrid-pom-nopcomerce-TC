@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import commons.AbtractPage;
 import pageUIs.HomePageUI;
-import pageUIs.LoginPageUI;
+import pageUIs.ShoppingCartPageUI;
+import pageUIs.WishlistPageUI;
 
 public class HomePage extends AbtractPage {
 	WebDriver driver;
@@ -31,9 +32,9 @@ public class HomePage extends AbtractPage {
 		return PageGeneratorManage.getCustomerInforPage(driver);
 	}
 
-	public SearchPage clickSearchLink(String footerText) {
-		waitToElementClickable(driver, HomePageUI.FOOTER_TEXT_LINK, footerText);
-		clickToElement(driver, HomePageUI.FOOTER_TEXT_LINK,footerText);
+	public SearchPage clickSearchLink(String footerLinkText) {
+		waitToElementClickable(driver, HomePageUI.FOOTER_TEXT_LINK, footerLinkText);
+		clickToElement(driver, HomePageUI.FOOTER_TEXT_LINK,footerLinkText);
 		return PageGeneratorManage.getSearchPageOject(driver);
 	}
 	public boolean isRegisterLinkDisplayed() {
@@ -45,4 +46,68 @@ public class HomePage extends AbtractPage {
 		waitToElementVisible(driver, HomePageUI.LOGIN_LINK);
 		return isElementDisplayed(driver, HomePageUI.LOGIN_LINK);
 	}
+
+	public void clicktoProductName(String ProductName) {
+		waitToElementClickable(driver, HomePageUI.PRODUCT_NAME, ProductName);
+		clickToElement(driver, HomePageUI.PRODUCT_NAME, ProductName);
+	}
+
+	public void clicktoAddToWishlist() {
+		waitToElementClickable(driver, HomePageUI.ADD_TO_WISHLIST_BUTTON);
+		clickToElement(driver, HomePageUI.ADD_TO_WISHLIST_BUTTON);
+	}
+
+	public String verifyMessageDisplayed() {
+		waitToElementVisible(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS);
+		return getElementText(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS);
+	}
+
+	public WishlistPage clickToWishlistLink() {
+		waitToElementClickable(driver, HomePageUI.WISHLIST_LINK);
+		clickToElement(driver, HomePageUI.WISHLIST_LINK);
+		return PageGeneratorManage.getWishlistPageOject(driver);
+	}
+
+	public void clickCloseMessageAddToWishlistSuccess() {
+		waitToElementClickable(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS_CLOSE);
+		clickToElement(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS_CLOSE);
+	}
+
+	public String verifyMessageWishlistEmptyDisplayed() {
+		waitToElementVisible(driver, WishlistPageUI.WISHLIST_MESSAGE_EMPTY);
+		return getElementText(driver, WishlistPageUI.WISHLIST_MESSAGE_EMPTY);
+	}
+
+	public void clicktoAddToComparelist() {
+		waitToElementClickable(driver, HomePageUI.ADD_TO_COMPARE_LIST_BUTTON);
+		clickToElement(driver, HomePageUI.ADD_TO_COMPARE_LIST_BUTTON);
+	}
+
+	public String verifyMessageAddToCompareListSuccess() {
+		waitToElementClickable(driver, HomePageUI.MESSAGE_ADD_TO_COMPARE_LIST_SUCCESS);
+		return getElementText(driver, HomePageUI.MESSAGE_ADD_TO_COMPARE_LIST_SUCCESS);
+	}
+
+	public CompareProductsListPage clickCompareProductListLink(String footerLinkText) {
+		scrollToElement(driver, HomePageUI.FOOTER_TEXT_LINK,footerLinkText);
+		waitToElementClickable(driver, HomePageUI.FOOTER_TEXT_LINK,footerLinkText);
+		clickToElement(driver, HomePageUI.FOOTER_TEXT_LINK,footerLinkText);
+		return PageGeneratorManage.getCompareProductsListPageOject(driver);
+	}
+	
+	public void moveToComputersLink() {
+		waitToElementVisible(driver, ShoppingCartPageUI.COMPUTER_LINK);
+		hoverMouseToElement(driver, ShoppingCartPageUI.COMPUTER_LINK);
+	}
+	
+	public void clickToNoterbooksLink() {
+		waitToElementClickable(driver, ShoppingCartPageUI.NOTERBOOK_LINK);
+		clickToElement(driver, ShoppingCartPageUI.NOTERBOOK_LINK);
+	}
+
+	public boolean areRecentlyProductView(String Product1, String Product2, String Product3) {
+		waitToElementVisible(driver, HomePageUI.RECENTLY_PRODUCT_VIEW, Product3,Product2,Product1);
+		return isElementDisplayed(driver, HomePageUI.RECENTLY_PRODUCT_VIEW, Product3,Product2,Product1);
+	}
+
 }

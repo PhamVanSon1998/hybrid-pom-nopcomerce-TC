@@ -31,9 +31,21 @@ public class PageGeneratorManage {
 	public static MyProductReviewPage getMyProductReviewPageOject(WebDriver driver) {
 		return new MyProductReviewPage(driver);
 	}
-
+	
 	public static SearchPage getSearchPageOject(WebDriver driver) {
 		return new SearchPage(driver);
+	}
+	
+	public static WishlistPage getWishlistPageOject(WebDriver driver) {
+		return new WishlistPage(driver);
+	}
+	
+	public static ShoppingCartPage getShoppingCartPageOject(WebDriver driver) {
+		return new ShoppingCartPage(driver);
+	}
+
+	public static CompareProductsListPage getCompareProductsListPageOject(WebDriver driver) {
+		return new CompareProductsListPage(driver);
 	}
 	
 	

@@ -319,10 +319,15 @@ public class AbtractPage {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].click();", getElement(driver, locator));
 	}
-
+	
 	public void scrollToElement(WebDriver driver, String locator) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getElement(driver, locator));
+	}
+
+	public void scrollToElement(WebDriver driver, String locator, String... values) {
+		jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getElement(driver, getDynamicLocator(locator, values)));
 	}
 
 	public void sendkeyToElementByJS(WebDriver driver, String locator, String value) {
