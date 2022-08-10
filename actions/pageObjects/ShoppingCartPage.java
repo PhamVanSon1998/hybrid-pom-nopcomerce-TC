@@ -23,16 +23,4 @@ public class ShoppingCartPage extends AbtractPage {
 		return getElementText(driver,ShoppingCartPageUI.ACCOUNT_WISHLISH);
 	}
 
-	public void moveToComputersLink() {
-		waitToElementVisible(driver, ShoppingCartPageUI.COMPUTER_LINK);
-		hoverMouseToElement(driver, ShoppingCartPageUI.COMPUTER_LINK);
-		
-	}
-
-	public HomePage clickToNoterbooksLink() {
-		waitToElementClickable(driver, ShoppingCartPageUI.NOTERBOOK_LINK);
-		clickToElement(driver, ShoppingCartPageUI.NOTERBOOK_LINK);
-		return PageGeneratorManage.getHomePageOject(driver);
-	}
-
 }

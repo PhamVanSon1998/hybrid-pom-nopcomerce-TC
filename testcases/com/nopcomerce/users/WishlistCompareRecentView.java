@@ -60,19 +60,6 @@ public class WishlistCompareRecentView extends AbtractTest {
 		log.info("Add to Wishlist Step-02: Click to Add to Wishlist");
 		homePageObject.clicktoAddToWishlist();
 
-//		log.info("Add to Wishlist Step-03: Check to Processor Dropdown");
-//		homePageObject.checktoProcessorDropdown();
-//		
-//		log.info("Add to Wishlist Step-04: Check to Ram Dropdown");
-//		homePageObject.checktoRamDropdown();
-//		
-//		log.info("Add to Wishlist Step-05: Check to HDD RadioButton");
-//		homePageObject.checktoHDDRadioButton();
-//		
-//		log.info("Add to Wishlist Step-05: Check to OS RadioButton");
-//		
-//		log.info("Add to Wishlist Step-05: Check to Software Checkbox");
-
 		log.info("Add to Wishlist Step-03: Verify Message Displayed: The product has been added to your wishlist");
 		verifyEquals(homePageObject.verifyMessageDisplayed(), "The product has been added to your wishlist");
 
@@ -94,70 +81,146 @@ public class WishlistCompareRecentView extends AbtractTest {
 
 	@Test
 	public void TC_03_Add_Product_To_Cart_From_Wishlist_Page() {
+		log.info("Add Product to cart from Wishlist Page Step-01: Check to Add to Cart Checkbox");
 		wishlistPageObject.checkToAddToCartCheckbox();
+		
+		log.info("Add Product to cart from Wishlist Page Step-02: Click Add to Cart Button");
 		wishlistPageObject.clickAddToCartButton();
+		
+		log.info("Add Product to cart from Wishlist Page Step-03: Click to Shopping link and navigate to Shopping Cart Page");
 		shoppingCartPageObject = wishlistPageObject.clickShoppingCartLink();
+		
+		log.info("Add Product to cart from Wishlist Page Step-04: Verify Add to cart Success");
 		verifyEquals(shoppingCartPageObject.verifyAddToCartSuccess(), "Apple MacBook Pro 13-inch");
+		
+		log.info("Add Product to cart from Wishlist Page Step-05: Verify Account Wishlist");
 		verifyEquals(shoppingCartPageObject.verifyAccountWishlist(), "(2)");
 
 	}
 
 	@Test
-	public void TC_04_Add_Product_To_Compare() {
-		shoppingCartPageObject.moveToComputersLink();
-		homePageObject = shoppingCartPageObject.clickToNoterbooksLink();
+	public void TC_04_Remove_Product_In_Wishlist_Page() {
+		log.info("Remove Product in Wishlist Page Step-01:Init Home Page");
+		homePageObject =PageGeneratorManage.getHomePageOject(driver);
+		
+		log.info("Remove Product in Wishlist Page Step-02: Move to Computer link");
+		homePageObject.moveToComputersLink();
+		
+		log.info("Remove Product in Wishlist Page Step-03:Click to Noterbooks link");
+		homePageObject.clickToNoterbooksLink();
+		
+		log.info("Remove Product in Wishlist Page Step-04: Click to Product name: Apple MacBook Pro 13-inch");
 		homePageObject.clicktoProductName("Apple MacBook Pro 13-inch");
 
-		log.info("Add to Wishlist Step-02: Click to Add to Wishlist");
+		log.info("Remove Product in Wishlist Page Step-05: Click to Add to Wishlist");
 		homePageObject.clicktoAddToWishlist();
 
-		log.info("Add to Wishlist Step-03: Verify Message Displayed: The product has been added to your wishlist");
+		log.info("Remove Product in Wishlist Page Step-06: Verify Message Displayed: The product has been added to your wishlist");
 		verifyEquals(homePageObject.verifyMessageDisplayed(), "The product has been added to your wishlist");
 
-		log.info("Add to Wishlist Step-04: click Close Message Add To Wishlist Success ");
+		log.info("Remove Product in Wishlist Page Step-07: click Close Message Add To Wishlist Success ");
 		homePageObject.clickCloseMessageAddToWishlistSuccess();
 
-		log.info("Add to Wishlist Step-05: Click to Wishlist link and navigate to Wishlist Page ");
+		log.info("Remove Product in Wishlist Page Step-08: Click to Wishlist link and navigate to Wishlist Page ");
 		wishlistPageObject = homePageObject.clickToWishlistLink();
 
+		log.info("Remove Product in Wishlist Page Step-09: Click to Remove Button");
 		wishlistPageObject.clickToRemoveButton();
+		
+		log.info("Remove Product in Wishlist Page Step-10: Verify Message Wishlist Empty Displayed ");
 		verifyEquals(homePageObject.verifyMessageWishlistEmptyDisplayed(), "The wishlist is empty!");
 	}
 
 	@Test
 	public void TC_05_Add_Product_To_Compare() {
-		shoppingCartPageObject = wishlistPageObject.clickShoppingCartLink();
-		shoppingCartPageObject.moveToComputersLink();
-		homePageObject = shoppingCartPageObject.clickToNoterbooksLink();
+		log.info("Add Product to Compare Step-01:Init Home Page");
+		homePageObject =PageGeneratorManage.getHomePageOject(driver);
+		
+		log.info("Add Product to Compare Step-02: Move to Computer link");
+		homePageObject.moveToComputersLink();
+		
+		log.info("Add Product to Compare Step-03: Click to Noterbooks link");
+		homePageObject.clickToNoterbooksLink();
+		
+		log.info("Add Product to Compare Step-04: Click to Product name:Apple MacBook Pro 13-inch");
 		homePageObject.clicktoProductName("Apple MacBook Pro 13-inch");
+		
+		log.info("Add Product to Compare Step-05:Click to Add to Compare list");
 		homePageObject.clicktoAddToComparelist();
+		
+		log.info("Add Product to Compare Step-06:Verify Message Add to Compare list Success");
 		verifyEquals(homePageObject.verifyMessageAddToCompareListSuccess(),"product comparison");
+		
+		log.info("Add Product to Compare Step-07:Back to Page");
 		homePageObject.backToPage(driver);
+		
+		log.info("Add Product to Compare Step-08:Click to Product name:Lenovo Thinkpad X1 Carbon Laptop");
 		homePageObject.clicktoProductName("Lenovo Thinkpad X1 Carbon Laptop");
+		
+		log.info("Add Product to Compare Step-09:Click to Add to Compare list");
 		homePageObject.clicktoAddToComparelist();
+		
+		log.info("Add Product to Compare Step-10:Verify Message Add to Compare list Success");
 		verifyEquals(homePageObject.verifyMessageAddToCompareListSuccess(),"product comparison");
+		
+		log.info("Add Product to Compare Step-11:Click to Compare Product list link");
 		compareProductsListPageObject = homePageObject.clickCompareProductListLink("Compare products list");
+		
+		log.info("Add Product to Compare Step-12:Verify amount Product add to compare = 2");
 		verifyEquals(compareProductsListPageObject.areSizeProductAddToCompareList(),2);
+		
+		log.info("Add Product to Compare Step-13:Verify Product Add to Compare list Displayed");
 		verifyTrue(compareProductsListPageObject.areProductAddToCompareListDisplayed("Apple MacBook Pro 13-inch","Lenovo Thinkpad X1 Carbon Laptop"));
+		
+		log.info("Add Product to Compare Step-14:Click Clear list Button");
 		compareProductsListPageObject.clickClearListButton();
+		
+		log.info("Add Product to Compare Step-15:Verify Message Compare list no data");
 		verifyEquals(compareProductsListPageObject.isMessageCompareListNoData(),"You have no items to compare.");
 	}
 	
 	@Test
 	public void TC_06_Recently_Viewed_Product() {
+		log.info("Recently View Product Step-01:Init Home Page");
 		homePageObject =PageGeneratorManage.getHomePageOject(driver);
+		
+		log.info("Recently View Product Step-02:Move to Computer link");
 		homePageObject.moveToComputersLink();
+		
+		log.info("Recently View Product Step-03:Click to Noterbooks link");
 		homePageObject.clickToNoterbooksLink();
+		
+		log.info("Recently View Product Step-04:Click to Product name: Apple MacBook Pro 13-inch");
 		homePageObject.clicktoProductName("Apple MacBook Pro 13-inch");
+		
+		log.info("Recently View Product Step-05: Back to Page");
 		homePageObject.backToPage(driver);
+		
+		log.info("Recently View Product Step-06:Click to Product name: Asus N551JK-XO076H Laptop");
 		homePageObject.clicktoProductName("Asus N551JK-XO076H Laptop");
+		
+		log.info("Recently View Product Step-07:Back to Page");
 		homePageObject.backToPage(driver);
+		
+		log.info("Recently View Product Step-08:Click to Product name: HP Envy 6-1180ca 15.6-Inch Sleekbook");
 		homePageObject.clicktoProductName("HP Envy 6-1180ca 15.6-Inch Sleekbook");
+		
+		log.info("Recently View Product Step-09:Back to Page");
 		homePageObject.backToPage(driver);
+		
+		log.info("Recently View Product Step-10:Click to Product name: HP Spectre XT Pro UltraBook");
 		homePageObject.clicktoProductName("HP Spectre XT Pro UltraBook");
+		
+		log.info("Recently View Product Step-11:Back to Page");
 		homePageObject.backToPage(driver);
+		
+		log.info("Recently View Product Step-12:Click to Product name: Lenovo Thinkpad X1 Carbon Laptop");
 		homePageObject.clicktoProductName("Lenovo Thinkpad X1 Carbon Laptop");
+		
+		log.info("Recently View Product Step-13:Back to Page");
 		homePageObject.backToPage(driver);
+		
+		log.info("Recently View Product Step-01:Verify Recently Product View");
 		verifyTrue(homePageObject.areRecentlyProductView("HP Envy 6-1180ca 15.6-Inch Sleekbook","HP Spectre XT Pro UltraBook","Lenovo Thinkpad X1 Carbon Laptop"));
 		
 	}

@@ -96,13 +96,13 @@ public class HomePage extends AbtractPage {
 	}
 	
 	public void moveToComputersLink() {
-		waitToElementVisible(driver, ShoppingCartPageUI.COMPUTER_LINK);
-		hoverMouseToElement(driver, ShoppingCartPageUI.COMPUTER_LINK);
+		waitToElementVisible(driver, HomePageUI.COMPUTER_LINK);
+		hoverMouseToElement(driver, HomePageUI.COMPUTER_LINK);
 	}
 	
 	public void clickToNoterbooksLink() {
-		waitToElementClickable(driver, ShoppingCartPageUI.NOTERBOOK_LINK);
-		clickToElement(driver, ShoppingCartPageUI.NOTERBOOK_LINK);
+		waitToElementClickable(driver, HomePageUI.NOTERBOOK_LINK);
+		clickToElement(driver, HomePageUI.NOTERBOOK_LINK);
 	}
 
 	public boolean areRecentlyProductView(String Product1, String Product2, String Product3) {

@@ -14,5 +14,6 @@ public class HomePageUI {
 	public static final String ADD_TO_COMPARE_LIST_BUTTON = "//div[@class='compare-products']//button[contains(@class,'add-to-compare-list-button')]";
 	public static final String MESSAGE_ADD_TO_COMPARE_LIST_SUCCESS = "//p[@class='content']/a";
 	public static final String RECENTLY_PRODUCT_VIEW = "//a[text()='%s']/parent::li/following-sibling::li/a[text()='%s']/parent::li/following-sibling::li/a[text()='%s']";
-	
+	public static final String COMPUTER_LINK = "//ul[contains(@class,'notmobile')]//a[contains(text(),'Computers')]";
+	public static final String NOTERBOOK_LINK = "//ul[contains(@class,'notmobile')]//ul[contains(@class,'sublist')]//a[contains(text(),'Notebooks')]";
 }
