@@ -63,12 +63,13 @@ public class HomePage extends AbtractPage {
 	}
 
 	public WishlistPage clickToWishlistLink() {
+		waitToElementInVisible(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS_CLOSE);
 		waitToElementClickable(driver, HomePageUI.WISHLIST_LINK);
 		clickToElement(driver, HomePageUI.WISHLIST_LINK);
 		return PageGeneratorManage.getWishlistPageOject(driver);
 	}
 
-	public void clickCloseMessageAddToWishlistSuccess() {
+	public void clickCloseMessageAddToSuccess() {
 		waitToElementClickable(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS_CLOSE);
 		clickToElement(driver, HomePageUI.MESSAGE_WISHLIST_SUCCESS_CLOSE);
 	}
@@ -83,9 +84,9 @@ public class HomePage extends AbtractPage {
 		clickToElement(driver, HomePageUI.ADD_TO_COMPARE_LIST_BUTTON);
 	}
 
-	public String verifyMessageAddToCompareListSuccess() {
-		waitToElementClickable(driver, HomePageUI.MESSAGE_ADD_TO_COMPARE_LIST_SUCCESS);
-		return getElementText(driver, HomePageUI.MESSAGE_ADD_TO_COMPARE_LIST_SUCCESS);
+	public String isMessageAddToSuccess() {
+		waitToElementClickable(driver, HomePageUI.MESSAGE_ADD_TO_SUCCESS);
+		return getElementText(driver, HomePageUI.MESSAGE_ADD_TO_SUCCESS);
 	}
 
 	public CompareProductsListPage clickCompareProductListLink(String footerLinkText) {
@@ -104,10 +105,68 @@ public class HomePage extends AbtractPage {
 		waitToElementClickable(driver, HomePageUI.NOTERBOOK_LINK);
 		clickToElement(driver, HomePageUI.NOTERBOOK_LINK);
 	}
+	
+	public void clickToProductTypeLink(String productType) {
+		waitToElementClickable(driver, HomePageUI.PRODUCT_TYPE_LINK,productType);
+		clickToElement(driver, HomePageUI.PRODUCT_TYPE_LINK,productType);
+	}
 
 	public boolean areRecentlyProductView(String Product1, String Product2, String Product3) {
 		waitToElementVisible(driver, HomePageUI.RECENTLY_PRODUCT_VIEW, Product3,Product2,Product1);
 		return isElementDisplayed(driver, HomePageUI.RECENTLY_PRODUCT_VIEW, Product3,Product2,Product1);
+	}
+
+	public void selectComponetOfCPUDropdown(String componentsOfCPUDropdown,String processorDropdown) {
+		waitToElementVisible(driver, HomePageUI.COMPONENTS_OF_CPU_DROPDOWN,componentsOfCPUDropdown);
+		selectItemInDropdown(driver, HomePageUI.COMPONENTS_OF_CPU_DROPDOWN,processorDropdown,componentsOfCPUDropdown);
+		
+	}
+	
+
+	public void checkComponetOfCPUCheckbox(String componentsOfCPUDropdown, String processorCheckbox) {
+		waitToElementVisible(driver, HomePageUI.COMPONENTS_OF_CPU_CHECKBOX,componentsOfCPUDropdown,processorCheckbox);
+		checkToCheckBox(driver, HomePageUI.COMPONENTS_OF_CPU_CHECKBOX,componentsOfCPUDropdown,processorCheckbox);
+	}
+	
+
+	public void checktoSoftwareRadioButton(String software) {
+		waitToElementVisible(driver, HomePageUI.SOFTWARE_RADIOBUTTON,software);
+		checkToCheckBox(driver, HomePageUI.SOFTWARE_RADIOBUTTON,software);
+	}
+
+	public void inputToQuantityAddToCartTextbox(String quantityAddToCartTextbox) {
+		waitToElementVisible(driver, HomePageUI.QUANTITY_ADD_TO_CART_TEXTBOX);
+		senKeysToElement(driver, HomePageUI.QUANTITY_ADD_TO_CART_TEXTBOX, quantityAddToCartTextbox);
+	}
+	
+	public void clickAddToCartButton() {
+		waitToElementClickable(driver, HomePageUI.ADD_TO_CART_BUTTON);
+		clickToElement(driver, HomePageUI.ADD_TO_CART_BUTTON);
+	}
+
+	public String isQuantityProductInShoppingCart() {
+		waitToElementVisible(driver, HomePageUI.QUANTITY_PRODUCT_INSHOPPING_CART);
+		return getElementText(driver, HomePageUI.QUANTITY_PRODUCT_INSHOPPING_CART);
+	}
+
+	public void moveToShoppingCartLink() {
+		waitToElementVisible(driver, HomePageUI.SHOPPING_CART_LINK);
+		hoverMouseToElement(driver, HomePageUI.SHOPPING_CART_LINK);
+	}
+
+	public String isTextWhenHoverShoppingCartLinkDisplayed() {
+		waitToElementVisible(driver, HomePageUI.MINI_SHOPPING_CART_TITLE);
+		return getElementText(driver, HomePageUI.MINI_SHOPPING_CART_TITLE);
+	}
+
+	public boolean isInforProductWhenHoverShoppingCartLinkDisplayed(String productName, String processor,String ram,String hdd,String os,String software1,String software2) {
+		waitToElementVisible(driver, HomePageUI.PRODUCT_INFOR, productName,processor,ram,hdd,os,software1,software2);
+		return isElementDisplayed(driver, HomePageUI.PRODUCT_INFOR, productName,processor,ram,hdd,os,software1,software2);
+	}
+
+	public String isInforSubtotalWhenHoverShoppingCartLinkDisplayed() {
+		waitToElementVisible(driver, HomePageUI.SUB_TOTAL_PRICE);
+		return getElementText(driver, HomePageUI.SUB_TOTAL_PRICE);
 	}
 
 }

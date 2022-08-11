@@ -26,7 +26,6 @@
 	<classpathentry kind="lib" path="libraries_WebDriverManager/docker-java-transport-httpclient5-3.2.11.jar"/>
 	<classpathentry kind="lib" path="libraries_WebDriverManager/error_prone_annotations-2.5.1.jar"/>
 	<classpathentry kind="lib" path="libraries_WebDriverManager/failureaccess-1.0.1.jar"/>
-	<classpathentry kind="lib" path="libraries_WebDriverManager/gson-2.8.8.jar"/>
 	<classpathentry kind="lib" path="libraries_WebDriverManager/gson-2.9.0.jar"/>
 	<classpathentry kind="lib" path="libraries_WebDriverManager/guava-30.1.1-jre.jar"/>
 	<classpathentry kind="lib" path="libraries_WebDriverManager/httpclient5-5.0.3.jar"/>
@@ -43,5 +42,9 @@
 	<classpathentry kind="lib" path="libraries_WebDriverManager/webdrivermanager-5.0.2.jar"/>
 	<classpathentry kind="lib" path="libraries_log4j/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="libraries_log4j/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libReportNG/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libReportNG/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="libReportNG/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="libReportNG/velocity-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

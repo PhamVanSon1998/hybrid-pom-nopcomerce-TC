@@ -3,12 +3,26 @@
 
 	<listeners>
 		<listener class-name="commons.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+		
 	</listeners>
 
 	<test name="Run on CHROME UI">
 		<parameter name="browser" value="chrome_ui" />
 		<parameter name="url" value="https://demo.nopcommerce.com/" />
-		<parameter name="emailLogin" value="000133" />
+		<parameter name="emailLogin" value="00111" />
+		<classes>
+			<class name="com.nopcomerce.users.Register" />
+			<class name="com.nopcomerce.users.MyAccount" />
+			<class name="com.nopcomerce.users.Order" />
+			
+		</classes>
+	</test>
+<!-- <test name="Run on FIREFOX UI">
+		<parameter name="browser" value="firefox_ui" />
+		<parameter name="url" value="https://demo.nopcommerce.com/" />
+		<parameter name="emailLogin" value="342" />
 		<classes>
 			<class name="com.nopcomerce.users.Register" />
 			<class name="com.nopcomerce.users.MyAccount" />
@@ -16,7 +30,8 @@
 			<class name="com.nopcomerce.users.Search" />
 			<class name="com.nopcomerce.users.WishlistCompareRecentView" />
 		</classes>
-	</test>
+	</test>-->
+	
 
 	<!-- <test name="Run on CHROME UI">
 		<parameter name="browser" value="chrome_ui" />

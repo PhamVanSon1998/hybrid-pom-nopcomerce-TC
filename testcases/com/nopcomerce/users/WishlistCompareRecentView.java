@@ -64,7 +64,7 @@ public class WishlistCompareRecentView extends AbtractTest {
 		verifyEquals(homePageObject.verifyMessageDisplayed(), "The product has been added to your wishlist");
 
 		log.info("Add to Wishlist Step-04: click Close Message Add To Wishlist Success ");
-		homePageObject.clickCloseMessageAddToWishlistSuccess();
+		homePageObject.clickCloseMessageAddToSuccess();
 
 		log.info("Add to Wishlist Step-05: Click to Wishlist link and navigate to Wishlist Page ");
 		wishlistPageObject = homePageObject.clickToWishlistLink();
@@ -119,7 +119,7 @@ public class WishlistCompareRecentView extends AbtractTest {
 		verifyEquals(homePageObject.verifyMessageDisplayed(), "The product has been added to your wishlist");
 
 		log.info("Remove Product in Wishlist Page Step-07: click Close Message Add To Wishlist Success ");
-		homePageObject.clickCloseMessageAddToWishlistSuccess();
+		homePageObject.clickCloseMessageAddToSuccess();
 
 		log.info("Remove Product in Wishlist Page Step-08: Click to Wishlist link and navigate to Wishlist Page ");
 		wishlistPageObject = homePageObject.clickToWishlistLink();
@@ -149,7 +149,7 @@ public class WishlistCompareRecentView extends AbtractTest {
 		homePageObject.clicktoAddToComparelist();
 		
 		log.info("Add Product to Compare Step-06:Verify Message Add to Compare list Success");
-		verifyEquals(homePageObject.verifyMessageAddToCompareListSuccess(),"product comparison");
+		verifyEquals(homePageObject.isMessageAddToSuccess(),"product comparison");
 		
 		log.info("Add Product to Compare Step-07:Back to Page");
 		homePageObject.backToPage(driver);
@@ -161,7 +161,7 @@ public class WishlistCompareRecentView extends AbtractTest {
 		homePageObject.clicktoAddToComparelist();
 		
 		log.info("Add Product to Compare Step-10:Verify Message Add to Compare list Success");
-		verifyEquals(homePageObject.verifyMessageAddToCompareListSuccess(),"product comparison");
+		verifyEquals(homePageObject.isMessageAddToSuccess(),"product comparison");
 		
 		log.info("Add Product to Compare Step-11:Click to Compare Product list link");
 		compareProductsListPageObject = homePageObject.clickCompareProductListLink("Compare products list");
